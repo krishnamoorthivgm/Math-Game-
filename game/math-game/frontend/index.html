@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Math Game</title>
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Math Game</h1>
+        <div id="login-form">
+            <input type="text" id="name-input" class="answer-input" placeholder="Your Name" required /><br>
+            <input type="email" id="email-input" class="answer-input" placeholder="Your Email" required />
+            <button id="login-button" class="submit-button">Login</button>
+        </div>
+        <div id="user-display" style="display:none; margin-bottom: 16px; font-weight: bold;"></div>
+        <div id="question-display" class="question-display" style="display:none;"></div>
+        <input type="number" id="answer-input" class="answer-input" placeholder="Your answer" style="display:none;" />
+        <button id="submit-button" class="submit-button" style="display:none;">Submit</button>
+        <div id="score-display" class="score-display" style="display:none;">Score: 0</div>
+        <div id="timer-display" class="timer-display" style="display:none;">Time: 30</div>
+        <div id="end-display" style="display:none; margin-top: 24px;"></div>
+        <button id="restart-button" class="submit-button" style="display:none;">Restart</button>
+    </div>
+    <script src="scripts/app.js"></script>
+</body>
+</html>
